@@ -1,4 +1,5 @@
 
+
 git clone /caminho/para/o/repositório
 git add .
 git commit -m "comentários das alterações"
