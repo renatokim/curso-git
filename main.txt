@@ -1,1 +1,89 @@
-historico 03
+git clone /caminho/para/o/repositório
+git add .
+git commit -m "comentários das alterações"
+# commit
+git push origin main
+# get
+git pull
+
+# create a new repository on the command line
+echo "# curso-git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/renatokim/curso-git.git
+git push -u origin main
+
+git config --local user.name "Renato Cruz"
+git config --local user.email "renato.kim@hotmail.com"
+
+# Log's
+git log --graph
+git log -p
+
+# Branch
+git branch name-branch
+git checkout name-branch
+git checkout -b lista
+
+git restore
+git switch
+
+# Merge
+git merge name-branch
+
+# Revert’s
+# Antes git add
+git checkout -- .
+
+# Depois git add
+git reset HEAD .
+git restore --staged .
+
+# Depois commit 
+git revert
+git reset
+
+# Salvando temporariamente
+git stash
+git stash list
+
+git stash apply 0
+git stash drop
+git stash pop
+
+# Viajando no tempo
+git checkout ea539b3
+git checkout -b novo-branch
+
+# Tag
+git tag -a v0.1.0 -m "Lançando a primeira versão (BETA) da aplicação de cursos"
+git push origin v0.1.0
+
+# Unindo commit’s
+git rebase -i c158d1e
+
+pick 971dba0 Trocando UL por DL
+s 3db095f Separando os títulos
+s af37cf6 Quebras de linha
+
+# Pegando um commit
+git cherry-pick befd28c
+
+# Mostrando as alterações
+git show 971dba0
+
+git bisect start
+git bisect bad HEAD
+git bisect good c17076a
+
+git bisect good
+git bisect reset
+
+# Vendo históricos
+git blame file.txt
+
+# Git flow
+
+
